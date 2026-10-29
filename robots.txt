@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mariamalomari-sketch.github.io/sitemap.xml

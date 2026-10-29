@@ -1,2 +1,5 @@
-# MariamAlomari-sketch.github.io
-Mariam Alomari · Fashion Designer &amp; AI Creative — مريم العمري، مصممة أزياء
+# Mariam Alomari · مريم العمري
+
+Fashion Designer · AI Creative · Creative Director
+
+https://mariamalomari-sketch.github.io

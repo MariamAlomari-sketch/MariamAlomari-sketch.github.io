@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://mariamalomari-sketch.github.io/">
+<link rel="icon" href="assets/img/om-dark.png">
+<title>مريم العمري · Mariam Alomari — Fashion Designer &amp; AI Creative</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="مريم العمري — مصممة أزياء سعودية ومديرة إبداعية ومتخصصة في الذكاء الاصطناعي للأزياء. تصميم مجموعات، أزياء راقية وتطريز، تيك باك، طبعات أقمشة، هوية بصرية، عروض أزياء رقمية وفيديو وموسيقى بالذكاء الاصطناعي. Mariam Alomari, Saudi fashion designer, AI creative and creative director.">
+<meta name="keywords" content="مريم العمري, مصممة أزياء سعودية, مصممة أزياء, تصميم أزياء بالذكاء الاصطناعي, تيك باك, تصميم طبعات أقمشة, عرض أزياء رقمي, Mariam Alomari, Saudi fashion designer, AI fashion, tech pack">
+<meta name="author" content="Mariam Alomari">
+<meta property="og:title" content="Mariam Alomari · مريم العمري — Fashion Designer & AI Creative">
+<meta property="og:description" content="مصممة أزياء ومديرة إبداعية. خدمات تصميم الأزياء والهوية البصرية والمحتوى بالذكاء الاصطناعي.">
+<meta property="og:image" content="https://mariamalomari-sketch.github.io/assets/img/om-galaxy.jpg">
+<meta property="og:url" content="https://mariamalomari-sketch.github.io/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&family=Jost:wght@300;400&display=swap">
+<style>
+/* Layout: a fixed galaxy sky; apricot bars carry navigation and text panels; services are planets you tap; the portfolio is a slowly turning ring. */
+:root{
+  --apricot:#FFF2EA;      /* brand matte apricot — bars, panels */
+  --apricot-2:#F6E2D6;    /* deeper apricot for hover/chips */
+  --ink:#0E0E0E;          /* logo black */
+  --ink-soft:#4A403B;     /* secondary text on apricot */
+  --night:#140D0B;        /* galaxy shadow */
+  --star:#F3D9C6;         /* text on galaxy */
+  --dust:#C9A792;         /* muted labels on galaxy */
+  --f-ar:"Tajawal","Segoe UI","Noto Sans Arabic",Tahoma,sans-serif;
+  --f-lat:"Jost","Tajawal","Helvetica Neue",Arial,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+body{background:var(--night);color:var(--star);font-family:var(--f-ar);font-size:16px;line-height:1.7}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--apricot)}
+a{color:inherit}
+img{max-width:100%;display:block}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--apricot);outline-offset:3px}
+
+/* sky */
+.sky{position:fixed;inset:0;z-index:0;background:var(--night) url(assets/img/galaxy.jpg) center/cover no-repeat;}
+.sky::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,transparent 0,rgba(20,13,11,.35) 60%,rgba(20,13,11,.75) 100%)}
+.twinkle{position:fixed;inset:0;z-index:0;pointer-events:none}
+.drift{position:fixed;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+.drift img{position:absolute;width:clamp(70px,11vw,150px);border-radius:6px;opacity:.42;box-shadow:0 10px 40px rgba(0,0,0,.5);animation:float var(--d,40s) linear infinite;animation-delay:var(--dl,0s);will-change:transform}
+@keyframes float{
+  0%{transform:translate(0,0) rotate(var(--r0,-6deg))}
+  50%{transform:translate(var(--dx,40px),var(--dy,-60px)) rotate(var(--r1,6deg))}
+  100%{transform:translate(0,0) rotate(var(--r0,-6deg))}
+}
+
+.wrap{position:relative;z-index:2}
+.gutter{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.inner{max-width:1180px;margin:0 auto}
+
+/* bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--apricot);color:var(--ink);border-bottom:1px solid rgba(14,14,14,.08)}
+.bar .inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:10px}
+.bar .om{height:38px;width:auto}
+.bar nav{display:flex;gap:clamp(10px,3vw,30px);flex-wrap:wrap;justify-content:flex-end}
+.bar nav a{text-decoration:none;font-size:15px;font-weight:500;padding:4px 2px;border-bottom:1px solid transparent}
+.bar nav a:hover{border-bottom-color:var(--ink)}
+
+/* hero */
+.hero{text-align:center;padding-block:clamp(56px,10vw,120px) clamp(36px,6vw,70px)}
+.hero .om-big{width:clamp(150px,26vw,280px);margin:0 auto 26px;filter:drop-shadow(0 0 30px rgba(255,220,200,.25));animation:breathe 9s ease-in-out infinite}
+@keyframes breathe{50%{transform:translateY(-8px);filter:drop-shadow(0 0 46px rgba(255,220,200,.4))}}
+.hero .wm{width:min(640px,92%);margin:0 auto}
+.roles{margin-top:22px;font-family:var(--f-lat);font-weight:300;letter-spacing:.32em;font-size:clamp(11px,1.6vw,14px);color:var(--dust);text-transform:uppercase}
+.tag{max-width:36em;margin:22px auto 0;font-size:clamp(16px,2.2vw,19px);font-weight:300;color:var(--star);text-wrap:balance}
+.cta{display:inline-flex;gap:10px;align-items:center;margin-top:30px;padding:12px 28px;border-radius:999px;background:var(--apricot);color:var(--ink);text-decoration:none;font-weight:500}
+.cta:hover{background:var(--apricot-2)}
+
+/* section heads */
+.sec{padding-block:clamp(48px,8vw,96px)}
+.eyebrow{font-family:var(--f-lat);font-weight:300;letter-spacing:.38em;text-transform:uppercase;font-size:12px;color:var(--dust)}
+.h2{font-size:clamp(28px,4.4vw,44px);font-weight:700;line-height:1.25;margin:6px 0 10px;text-wrap:balance}
+.lead{color:var(--dust);max-width:40em;margin:0}
+
+/* planets */
+.orbitfield{position:relative;margin-top:40px;display:grid;grid-template-columns:repeat(5,1fr);gap:34px 18px;align-items:start}
+.planet{background:none;border:0;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:12px;padding:6px;text-align:center;animation:bob var(--bd,7s) ease-in-out infinite;animation-delay:var(--bdl,0s);transform:translateY(var(--oy,0))}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -12px}}
+.planet:nth-child(5n+2){--oy:38px}.planet:nth-child(5n+4){--oy:22px}.planet:nth-child(5n+3){--oy:-10px}
+.orbw{position:relative;display:block;width:var(--s,120px);max-width:100%;aspect-ratio:1;border-radius:50%;
+  box-shadow:0 0 40px rgba(255,214,190,.14),0 0 2px rgba(255,242,234,.35);transition:transform .35s ease}
+.orb{position:absolute;inset:0;border-radius:50%;background:var(--tex) center/cover no-repeat;filter:var(--f,none);
+  animation:spin var(--sp,40s) linear infinite}
+.orbw::after{content:"";position:absolute;inset:0;border-radius:50%;
+  background:radial-gradient(circle at 32% 28%,rgba(255,246,238,.38),transparent 42%),radial-gradient(circle at 75% 80%,rgba(10,5,4,.55),transparent 60%)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ring{position:absolute;left:50%;top:50%;width:175%;height:38%;border:2px solid rgba(255,232,214,.55);border-radius:50%;transform:translate(-50%,-50%) rotate(-16deg);pointer-events:none;box-shadow:0 0 12px rgba(255,220,200,.25)}
+.planet:hover .orbw,.planet:focus-visible .orbw{transform:scale(1.08)}
+.planet .pl-ar{font-weight:500;font-size:15px;line-height:1.35;color:var(--star);max-width:13em;text-wrap:balance}
+.planet .pl-en{display:block;font-family:var(--f-lat);font-weight:300;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--dust);margin-top:2px}
+.hint{margin-top:56px;text-align:center;color:var(--dust);font-size:14px}
+
+/* about */
+.panel{background:var(--apricot);color:var(--ink);border-radius:4px}
+.about{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:0;overflow:hidden}
+.about .txt{padding:clamp(24px,4vw,52px)}
+.about .txt p{margin:0 0 14px;max-width:62ch;color:var(--ink-soft)}
+.about h3{font-size:18px;margin:26px 0 8px;color:var(--ink)}
+.about ul{margin:0;padding:0 1.1em 0 0;color:var(--ink-soft)}
+.about li{margin-bottom:4px}
+.about .pic{position:relative;min-height:340px;background:url(assets/img/om-galaxy.jpg) center/cover}
+.about .h2{color:var(--ink)}
+.about .eyebrow{color:#8A6A58}
+.cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+
+/* portfolio ring */
+.reel{margin-top:30px;display:grid;gap:18px;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.track-row{display:flex;gap:16px;width:max-content;animation:slide var(--dur,160s) linear infinite}
+.track-row.rev{animation-direction:reverse}
+.reel:hover .track-row{animation-play-state:paused}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(50%)}}
+.card{flex:none;height:clamp(230px,30vw,340px);aspect-ratio:595/842;border:0;padding:0;cursor:zoom-in;background:var(--apricot);border-radius:4px;overflow:hidden;box-shadow:0 14px 40px rgba(0,0,0,.5);transition:transform .3s}
+.card:hover{transform:translateY(-6px)}
+.card img{width:100%;height:100%;object-fit:cover}
+
+/* contact */
+.contact{padding:clamp(24px,4vw,48px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:30px;align-items:center}
+.contact .h2{color:var(--ink)}
+.contact .eyebrow{color:#8A6A58}
+.links{display:grid;gap:10px}
+.lnk{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border:1px solid rgba(14,14,14,.18);border-radius:999px;text-decoration:none;color:var(--ink);background:rgba(255,255,255,.35)}
+.lnk:hover{background:var(--apricot-2)}
+.lnk b{font-weight:500}
+.lnk span{font-family:var(--f-lat);direction:ltr;font-size:14px;color:var(--ink-soft);overflow-wrap:anywhere}
+.copy{border:0;background:var(--ink);color:var(--apricot);border-radius:999px;padding:6px 12px;font-size:12px;cursor:pointer;flex:none}
+
+footer{padding-block:40px;text-align:center;color:var(--dust);font-size:13px}
+footer img{width:46px;margin:0 auto 10px;opacity:.85}
+
+/* modal */
+dialog{border:0;padding:0;background:var(--apricot);color:var(--ink);width:min(980px,94vw);max-height:92vh;border-radius:6px;overflow:hidden}
+dialog::backdrop{background:rgba(12,7,6,.78);backdrop-filter:blur(4px)}
+.dlg{display:flex;flex-direction:column;max-height:92vh}
+.dlg-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:18px 22px 12px;border-bottom:1px solid rgba(14,14,14,.1)}
+.dlg-head .eyebrow{color:#8A6A58;font-size:11px}
+.dlg-head h3{margin:2px 0 0;font-size:clamp(20px,3vw,28px);line-height:1.3}
+.dlg-head p{margin:2px 0 0;color:var(--ink-soft);font-size:14px}
+.x{border:1px solid rgba(14,14,14,.25);background:transparent;border-radius:50%;width:40px;height:40px;cursor:pointer;font-size:20px;line-height:1;flex:none}
+.dlg-body{overflow:auto;padding:18px 22px 26px;display:grid;gap:22px}
+.full{width:100%;height:auto;border-radius:4px;background:#fff}
+.mainimg{max-width:560px;margin:0 auto;box-shadow:0 10px 30px rgba(14,14,14,.15)}
+.subhead{font-weight:700;font-size:18px;margin:6px 0 0}
+.subhead small{display:block;font-family:var(--f-lat);font-weight:300;font-size:11px;letter-spacing:.24em;color:#8A6A58;text-transform:uppercase}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.vid{position:relative;border-radius:4px;overflow:hidden;background:#000}
+.vid video{width:100%;height:auto;display:block;max-height:74vh;margin:0 auto}
+.vid .cap{padding:10px 12px;background:var(--ink);color:var(--apricot);font-size:14px;display:flex;justify-content:space-between;gap:10px}
+.ig{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;border:1px solid var(--ink);text-decoration:none;font-family:var(--f-lat);direction:ltr;width:max-content;max-width:100%}
+.dlg-foot{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;padding:14px 22px;border-top:1px solid rgba(14,14,14,.1);background:var(--apricot)}
+.dlg-foot a.wa{background:var(--ink);color:var(--apricot);padding:10px 22px;border-radius:999px;text-decoration:none}
+.tracks{display:grid;gap:10px}
+.track{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:14px;align-items:center;padding:12px 16px;background:var(--ink);color:var(--apricot);border-radius:999px}
+.track span{font-family:var(--f-lat);font-size:14px;letter-spacing:.04em;text-align:left}
+.track audio{width:100%;height:36px}
+@media (max-width:560px){.track{grid-template-columns:1fr;border-radius:14px}}
+.lightbox img{width:100%;height:auto;max-height:80vh;object-fit:contain;background:var(--apricot)}
+.zoomable{cursor:zoom-in}
+
+@media (max-width:900px){
+  .orbitfield{grid-template-columns:repeat(3,1fr)}
+  .planet:nth-child(n){--oy:0}
+  .planet:nth-child(3n+2){--oy:30px}
+  .about{grid-template-columns:1fr}
+  .about .pic{min-height:220px;order:-1}
+  .contact{grid-template-columns:1fr}
+  .cols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  .orbitfield{grid-template-columns:repeat(2,1fr);gap:26px 10px}
+  .planet:nth-child(n){--oy:0}
+  .planet:nth-child(2n){--oy:34px}
+  .bar nav a{font-size:13px}
+  .bar .om{height:32px}
+  .grid3{grid-template-columns:1fr 1fr}
+  .cols{grid-template-columns:1fr}
+  .orbw{width:calc(var(--s,120px)*.78)}
+  .drift img:nth-child(n+6){display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reel{overflow-x:auto;mask-image:none}
+}
+</style>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Mariam Alomari","alternateName":"مريم العمري","jobTitle":"Fashion Designer, AI Creative, Creative Director","url":"https://mariamalomari-sketch.github.io/","image":"https://mariamalomari-sketch.github.io/assets/img/om-galaxy.jpg","sameAs":["https://instagram.com/mariamalomar1"],"address":{"@type":"PostalAddress","addressCountry":"SA"}}</script>
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
+</head>
+<body>
+<div dir="rtl" lang="ar">
+<div class="sky" aria-hidden="true"></div>
+<canvas class="twinkle" id="twinkle" aria-hidden="true"></canvas>
+<div class="drift" id="drift" aria-hidden="true"></div>
+
+<div class="wrap">
+  <header class="bar gutter">
+    <div class="inner">
+      <a href="#top" aria-label="الرئيسية"><img class="om" src="assets/img/om-dark.png" alt="OM"></a>
+      <nav aria-label="القائمة">
+        <a href="#services">الخدمات</a>
+        <a href="#work">أعمالي</a>
+        <a href="#about">نبذة</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero gutter" id="top">
+    <img class="om-big" src="assets/img/om-light.png" alt="شعار OM">
+    <h1 style="margin:0"><img class="wm" src="assets/img/wordmark-light.png" alt="Mariam Alomari — Fashion Designer"></h1>
+    <div class="roles" dir="ltr">Fashion Designer · AI Creative · Creative Director</div>
+    <p class="tag">أبني هويات بصرية كاملة لدور الأزياء والعلامات التجارية، من الفكرة الأولى حتى الصورة والفيديو الجاهزين للنشر، بخبرة التصميم وأدوات الذكاء الاصطناعي.</p>
+    <a class="cta" href="#services">اكتشف الخدمات ↓</a>
+  </section>
+
+  <section class="sec gutter" id="services">
+    <div class="inner">
+      <div class="eyebrow" dir="ltr" style="text-align:right">Services Galaxy</div>
+      <h2 class="h2">خدماتي</h2>
+      <p class="lead">كل كوكب خدمة. اضغط على الكوكب لتنفتح تفاصيلها وأعمالها.</p>
+      <div class="orbitfield" id="planets"></div>
+    </div>
+  </section>
+
+  <section class="sec gutter" id="work">
+    <div class="inner">
+      <div class="eyebrow" dir="ltr" style="text-align:right">Portfolio</div>
+      <h2 class="h2">من أعمالي</h2>
+      <p class="lead">صفحات ملف أعمالي تمر تلقائيًا، وتقدر توقفها بالمرور فوقها أو تكبّر أي صفحة بالضغط عليها.</p>
+      <div class="reel" id="reel"><div class="track-row" id="row1"></div><div class="track-row rev" id="row2" style="--dur:180s"></div></div>
+    </div>
+  </section>
+
+  <section class="sec gutter" id="about">
+    <div class="inner panel about">
+      <div class="txt">
+        <div class="eyebrow" dir="ltr" style="text-align:right">About</div>
+        <h2 class="h2">نبذة عني</h2>
+        <p>متخصصة في تصميم الأزياء والإدارة الإبداعية. مصممة أزياء ورسامة رقمية بخبرة تزيد عن خمس سنوات في صناعة الأزياء، أدمج بين الرؤية الفنية المتجددة والخبرة التقنية المتقدمة.</p>
+        <p>أتخصص في ابتكار وتنفيذ تصاميم أزياء مبتكرة وعالية الجودة، من الفكرة الأولى وحتى الإنتاج النهائي، مع إتقان أدوات التصميم العالمية Procreate وDesigner 2D/3D وCLO 3D، وخبرة عملية في خطوط الإنتاج داخل المصانع لضمان توافق التصاميم مع متطلبات التصنيع.</p>
+        <div class="cols">
+          <div>
+            <h3>التعليم</h3>
+            <ul><li>دبلوم تصميم وإنتاج أزياء، الكلية التقنية</li><li>بكالوريوس إدارة واقتصاد، جامعة الملك عبدالعزيز</li></ul>
+          </div>
+          <div>
+            <h3>الخبرات</h3>
+            <ul><li>مصممة مجموعات أزياء للأسواق المحلية والعالمية</li><li>العمل في خطوط الإنتاج داخل المصانع</li><li>التصميم المخصص حسب طلب العملاء</li><li>مدربة وموجهة في الرسم وتصميم الأزياء</li></ul>
+          </div>
+          <div>
+            <h3>المهارات</h3>
+            <ul><li>الرسم والتصميم الرقمي 2D و3D</li><li>إعداد الملفات الفنية للتصنيع</li><li>الإدارة الإبداعية وقيادة الفرق</li><li>فيديوهات وعروض وإعلانات بالذكاء الاصطناعي</li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="pic" role="img" aria-label="شعار OM بين الكواكب"></div>
+    </div>
+  </section>
+
+  <section class="sec gutter" id="contact">
+    <div class="inner panel contact">
+      <div>
+        <div class="eyebrow" dir="ltr" style="text-align:right">Contact</div>
+        <h2 class="h2">للاستفسار والطلب تواصلوا معي</h2>
+        <p style="color:var(--ink-soft);margin:0">أرد على الرسائل في واتساب وإنستقرام.</p>
+      </div>
+      <div class="links">
+        <a class="lnk" href="https://wa.me/966549074892" target="_blank" rel="noopener"><b>واتساب</b><span>+966 54 907 4892</span></a>
+        <a class="lnk" href="https://instagram.com/mariamalomar1" target="_blank" rel="noopener"><b>إنستقرام</b><span>@mariamalomar1</span></a>
+        <div class="lnk"><b>الإيميل</b><span id="mail">mariamtrining15@gmail.com</span><button class="copy" type="button" data-copy="mariamtrining15@gmail.com">نسخ</button></div>
+        <a class="lnk" href="https://heyzine.com/flip-book/cbf9782a94.html" target="_blank" rel="noopener"><b>ملف الأعمال الكامل</b><span>Heyzine Flipbook ↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="gutter">
+    <img src="assets/img/om-light.png" alt="">
+    © 2026 Mariam Alomari · مريم العمري
+  </footer>
+</div>
+
+<dialog id="dlg" aria-labelledby="dlg-title">
+  <div class="dlg">
+    <div class="dlg-head">
+      <div><div class="eyebrow" id="dlg-en" dir="ltr" style="text-align:right"></div><h3 id="dlg-title"></h3><p id="dlg-sub"></p></div>
+      <button class="x" type="button" id="dlg-x" aria-label="إغلاق">×</button>
+    </div>
+    <div class="dlg-body" id="dlg-body"></div>
+    <div class="dlg-foot">
+      <span style="font-size:14px;color:var(--ink-soft)">للاستفسار والطلب تواصلوا معي</span>
+      <a class="wa" href="https://wa.me/966549074892" target="_blank" rel="noopener">واتساب</a>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="lb" class="lightbox" aria-label="عرض الصورة">
+  <div style="position:relative">
+    <button class="x" type="button" id="lb-x" aria-label="إغلاق" style="position:absolute;top:10px;left:10px;background:var(--apricot)">×</button>
+    <img id="lb-img" alt="">
+  </div>
+</dialog>
+</div>
+
+<script>
+(function(){
+const T={moon:'url(assets/img/planet-moon.png)',storm:'url(assets/img/planet-storm.png)'};
+const R='assets/royal/', V='assets/vid/', S='assets/svc/';
+const services=[
+ {id:'couture',ar:'أزياء راقية وتطوير التطريز',en:'Haute Couture & Embellishment',sub:'تطريز وخامات فاخرة بتفاصيل كوتور',tex:'storm',f:'sepia(.5) hue-rotate(-35deg) saturate(1.6) brightness(1.05)',s:150,ring:true,
+  extra:[{h:'فساتين العرايس',en:'Bridal Couture',imgs:['bride-1.jpg','bride-2.jpg'].map(x=>S+x)}]},
+ {id:'bags',ar:'تصميم الحقائب',en:'Bag Design',sub:'حقائب يد · توت · دافل · برميل · بوسطن',tex:'moon',f:'sepia(.4) hue-rotate(150deg) saturate(1.1) brightness(1.02)',s:108},
+ {id:'collections',ar:'تصميم مجموعات متكاملة',en:'Fashion Collection Design',sub:'من المود بورد حتى مجموعة متكاملة',tex:'moon',f:'sepia(.6) saturate(1.3) brightness(1)',s:118},
+ {id:'commercial',ar:'مجموعات تجارية قابلة للإنتاج',en:'Commercial Collections',sub:'قطع متناسقة · إنتاج سهل وبتكلفة أقل',tex:'storm',f:'grayscale(.2) sepia(.3) brightness(.95)',s:104},
+ {id:'sleepwear',ar:'ملابس النوم واللانجري',en:'Sleepwear & Lingerie',sub:'تصميم ورسومات فنية بطبعات خاصة',tex:'moon',f:'sepia(.7) hue-rotate(-40deg) saturate(1.8) brightness(1.08)',s:112},
+ {id:'techpack',ar:'تيك باك ورسومات فنية',en:'Tech Pack & Technical Flats',sub:'ملف فني جاهز للمصنع بالمقاسات والتفاصيل',tex:'storm',f:'sepia(.4) hue-rotate(170deg) saturate(.8)',s:122,ring:true},
+ {id:'kids',ar:'ملابس الأطفال والمواليد',en:'Kids & Newborn Wear',sub:'مجموعات وطبعات مرحة للأطفال',tex:'moon',f:'sepia(.6) hue-rotate(40deg) saturate(1.3) brightness(1.05)',s:100},
+ {id:'prints',ar:'تصميم طبعات وباترون أقمشة',en:'Fabric Print Design',sub:'نقشات حصرية وألوان Pantone',tex:'moon',f:'sepia(.8) hue-rotate(-25deg) saturate(2) brightness(1.02)',s:140,
+  extra:[
+   {h:'نقشات حصرية لبراند Royal Pcs',en:'Royal Pcs · Mimi & Momo prints',imgs:[R+'pattern-mimi.jpg',R+'pattern-momo.jpg'],cls:'grid2'},
+   {h:'النقشة على القطعة: بجايم العيد وفستان عائلة كوكو',en:'Applied on garments',imgs:[R+'pajama-mimi.jpg',R+'pajama-momo.jpg',R+'dress-coco.jpg'],cls:'grid3'},
+   {ig:'royal.pcs'}
+  ]},
+ {id:'digital',ar:'التصميم الرقمي',en:'Digital Illustration',sub:'مجموعة ريحانة · Reyhana',tex:'storm',f:'sepia(.5) hue-rotate(-70deg) saturate(1.2) brightness(.95)',s:110},
+ {id:'identity',ar:'هوية بصرية متكاملة',en:'Brand Visual Identity',sub:'براند NŌR · الشعار والهوية والأزياء',tex:'moon',f:'grayscale(.3) sepia(.5) brightness(.9)',s:126,ring:true},
+ {id:'ads',ar:'صور حملات إعلانية بالذكاء الاصطناعي',en:'AI Ad Campaign Imagery',sub:'صور منتجات وحملات جاهزة للنشر',tex:'storm',f:'sepia(.3) saturate(1.1) brightness(1.1)',s:116},
+ {id:'video',ar:'فيديو بالذكاء الاصطناعي',en:'AI Video',sub:'لبراند Royal Pcs وغيرها',tex:'moon',f:'sepia(.5) hue-rotate(120deg) saturate(.9) brightness(1.02)',s:104,
+  extra:[{h:'فيديوهات براند Royal Pcs',en:'Royal Pcs · AI Video',vids:[{src:V+'royal-1.mp4',poster:V+'royal-1-poster.jpg',cap:'Royal Pcs · متجر الفساتين'},{src:V+'royal-2.mp4',poster:V+'royal-2-poster.jpg',cap:'Royal Pcs · مطبخ الحلويات'}],cls:'grid2'},{ig:'royal.pcs'}]},
+ {id:'show',ar:'عرض أزياء رقمي',en:'Digital Fashion Show',sub:'Ocean Motion · Coral Reefs',tex:'storm',f:'sepia(.3) hue-rotate(180deg) saturate(1.5) brightness(.9)',s:146,ring:true,
+  extra:[{h:'شاهد العروض',en:'Press play',vids:[{src:V+'ocean-motion-show.mp4',poster:V+'ocean-motion-poster.jpg',cap:'Ocean Motion · عرض أزياء رقمي'},{src:V+'coral-reefs-show.mp4',poster:V+'coral-reefs-poster.jpg',cap:'Coral Reefs · Haute Couture'}],cls:'grid2'}]},
+ {id:'music',ar:'موسيقى بالذكاء الاصطناعي',en:'AI Music',sub:'لأي مناسبة · عروض · علامات · فعاليات',tex:'moon',f:'grayscale(.6) brightness(1.1)',s:92,
+  extra:[{h:'استمع للمقطوعات',en:'Listen',auds:[['ocean-motion','Ocean Motion · Runway Anthem Mix'],['deep-seas-1','Deep in the Seas · I'],['deep-seas-2','Deep in the Seas · II'],['crimson-dreams','Crimson Dreams']]}]},
+ {id:'course',ar:'دورة: من الفكرة إلى Collection',en:'Live Course',sub:'يومين · ساعتان يوميًا · 600 ر.س',tex:'storm',f:'sepia(.9) hue-rotate(-10deg) saturate(2.2) brightness(1.15)',s:120}
+];
+
+/* planets */
+const field=document.getElementById('planets');
+services.forEach((s,i)=>{
+  const b=document.createElement('button');b.className='planet';b.type='button';
+  b.style.setProperty('--bd',(6+(i%5)*1.3)+'s');b.style.setProperty('--bdl',(-i*0.9)+'s');
+  b.innerHTML=`<span class="orbw" style="--s:${s.s}px"><span class="orb" style="--tex:${T[s.tex]};--f:${s.f};--sp:${50+(i%4)*15}s"></span>${s.ring?'<span class="ring"></span>':''}</span>
+   <span class="pl-ar">${s.ar}<span class="pl-en" dir="ltr">${s.en}</span></span>`;
+  b.addEventListener('click',()=>openSvc(s));
+  field.appendChild(b);
+});
+
+/* service dialog */
+const dlg=document.getElementById('dlg'),body=document.getElementById('dlg-body');
+function img(src,alt){return `<img class="full zoomable" loading="lazy" src="${src}" alt="${alt||''}">`}
+function openSvc(s){
+  document.getElementById('dlg-en').textContent=s.en;
+  document.getElementById('dlg-title').textContent=s.ar;
+  document.getElementById('dlg-sub').textContent=s.sub;
+  let h=`<img class="full mainimg zoomable" src="${S+s.id}.jpg" alt="${s.ar}">`;
+  (s.extra||[]).forEach(x=>{
+    if(x.ig){h+=`<a class="ig" href="https://instagram.com/${x.ig}" target="_blank" rel="noopener">@${x.ig} · Instagram ↗</a>`;return}
+    if(x.h)h+=`<div class="subhead"><small dir="ltr" style="text-align:right">${x.en||''}</small>${x.h}</div>`;
+    if(x.imgs)h+=`<div class="${x.cls||'grid2'}">${x.imgs.map(u=>img(u,x.h)).join('')}</div>`;
+    if(x.auds)h+=`<div class="tracks">${x.auds.map(([f,t])=>`<div class="track"><span dir="ltr">${t}</span><audio controls preload="none" src="assets/audio/${f}.mp3"></audio></div>`).join('')}</div>`;
+    if(x.vids)h+=`<div class="${x.cls||''}" style="display:grid;gap:14px">${x.vids.map(v=>`<div class="vid"><video controls playsinline preload="none" ${v.poster?`poster="${v.poster}"`:''} src="${v.src}"></video><div class="cap"><span>${v.cap}</span><span>▶</span></div></div>`).join('')}</div>`;
+  });
+  body.innerHTML=h;body.scrollTop=0;
+  // tap anywhere on a video starts it
+  body.querySelectorAll('.vid').forEach(w=>{const v=w.querySelector('video');w.querySelector('.cap').addEventListener('click',()=>{v.paused?v.play():v.pause()})});
+  dlg.showModal();
+}
+function closeDlg(){body.querySelectorAll('video,audio').forEach(v=>v.pause());dlg.close()}
+document.getElementById('dlg-x').onclick=closeDlg;
+dlg.addEventListener('click',e=>{if(e.target===dlg)closeDlg()});
+dlg.addEventListener('close',()=>body.querySelectorAll('video,audio').forEach(v=>v.pause()));
+body.addEventListener('play',e=>body.querySelectorAll('video,audio').forEach(m=>{if(m!==e.target)m.pause()}),true);
+
+/* lightbox */
+const lb=document.getElementById('lb'),lbi=document.getElementById('lb-img');
+function zoom(src){lbi.src=src;lb.showModal()}
+document.addEventListener('click',e=>{const z=e.target.closest('.zoomable');if(z){zoom(z.currentSrc||z.src)}});
+document.getElementById('lb-x').onclick=()=>lb.close();
+lb.addEventListener('click',e=>{if(e.target===lb)lb.close()});
+
+/* portfolio ring */
+function fill(row,list){const mk=u=>`<button type="button" class="card" aria-label="تكبير العمل" data-src="${u}"><img src="${u}" alt="" loading="lazy"></button>`;row.innerHTML=list.map(mk).join('')+list.map(mk).join('')}
+const work=(()=>{const pg=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,18,19,21,22,23,27,43,44].map(n=>`assets/port/pg${String(n).padStart(2,'0')}.jpg`);
+ const extra=['assets/port/dress-1.jpg',R+'pajama-mimi.jpg','assets/port/dress-2.jpg',R+'pattern-momo.jpg','assets/port/dress-3.jpg',R+'dress-coco.jpg',R+'pattern-mimi.jpg',R+'pajama-momo.jpg'];
+ const out=[];pg.forEach((u,i)=>{out.push(u);if(i%3===1&&extra.length)out.push(extra.shift())});return out.concat(extra)})();
+fill(document.getElementById('row1'),work.slice(0,Math.ceil(work.length/2)));
+fill(document.getElementById('row2'),work.slice(Math.ceil(work.length/2)));
+document.getElementById('reel').addEventListener('click',e=>{const c=e.target.closest('.card');if(c)zoom(c.dataset.src)});
+
+/* floating images in the galaxy */
+const drift=document.getElementById('drift');
+const floats=['assets/port/pg02.jpg','assets/port/dress-1.jpg','assets/port/pg16.jpg','assets/port/pg23.jpg','assets/port/dress-3.jpg','assets/port/pg10.jpg','assets/port/pg21.jpg','assets/port/dress-2.jpg'];
+const spots=[[4,14],[80,10],[88,46],[2,58],[70,78],[30,88],[52,30],[16,36]];
+floats.forEach((u,i)=>{const im=document.createElement('img');im.src=u;im.alt='';
+  im.style.left=spots[i][0]+'%';im.style.top=spots[i][1]+'%';
+  im.style.setProperty('--d',(38+i*7)+'s');im.style.setProperty('--dl',(-i*6)+'s');
+  im.style.setProperty('--dx',((i%2?-1:1)*(30+i*8))+'px');im.style.setProperty('--dy',((i%3?-1:1)*(40+i*6))+'px');
+  im.style.setProperty('--r0',(-8+i*2)+'deg');im.style.setProperty('--r1',(6-i)+'deg');
+  drift.appendChild(im)});
+
+/* twinkling stars */
+const cv=document.getElementById('twinkle'),cx=cv.getContext('2d');let st=[];
+function sz(){cv.width=innerWidth;cv.height=innerHeight;st=Array.from({length:Math.round(innerWidth*innerHeight/9000)},()=>({x:Math.random()*cv.width,y:Math.random()*cv.height,r:Math.random()*1.3+.2,p:Math.random()*6.28,s:.5+Math.random()*1.5}))}
+sz();addEventListener('resize',sz);
+const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function draw(t){cx.clearRect(0,0,cv.width,cv.height);for(const s of st){const a=.25+.75*Math.abs(Math.sin(s.p+t/1000*s.s));cx.globalAlpha=still?.6:a;cx.fillStyle='#FFE9DA';cx.beginPath();cx.arc(s.x,s.y,s.r,0,6.28);cx.fill()}if(!still)requestAnimationFrame(draw)}
+requestAnimationFrame(draw);
+
+/* copy email */
+document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',()=>{
+  const t=b.dataset.copy;
+  const ok=()=>{b.textContent='تم النسخ';setTimeout(()=>b.textContent='نسخ',1600)};
+  (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(ok).catch(()=>{const r=document.createRange();r.selectNodeContents(document.getElementById('mail'));const sel=getSelection();sel.removeAllRanges();sel.addRange(r)});
+}));
+})();
+</script>
+
+</body>
+</html>
